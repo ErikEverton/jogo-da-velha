@@ -52,7 +52,7 @@ buttons.forEach(button => {
             location.reload();
         }
 
-        if(sequenciaO.length === 5 || sequenciaX.length === 5) {
+        if(sequenciaX.length === 5 && !defineGanhador(sequenciasDeVitoria, sequenciaX)) {
             alert("EMPATE");
             location.reload();
         }
